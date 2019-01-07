@@ -32,7 +32,7 @@ manager.add_command('db', MigrateCommand)
 def test():
     """Run the unit tests."""
     import unittest
-    tests = unittest.TestLoder().discover('tests')
+    tests = unittest.TestLoader().discover('tests')
     unittest.TestTestRunner(verbosity=2).run(tests)
 
 
