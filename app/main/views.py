@@ -1,9 +1,8 @@
-from flask import render_template, session, redirect, url_for, current_app
-from .. import db
-from ..models import User
-from ..email import send_email
-from . import main
-from .forms import NameForm
+# from flask import render_template, session, redirect, url_for, current_app
+# from .. import db
+# from ..models import User
+# from ..email import send_email
+# from .forms import NameForm
 
 # # 支持请求
 # @main.route('/', methods=['GET', 'POST'])
@@ -36,6 +35,10 @@ from .forms import NameForm
 #     return render_template('index.html',
 #             form=form,name=session.get('name'),
 #             known=session.get('known',False))
+
+from flask import render_template
+from . import main
+
 # 支持请求
 @main.route('/')
 def index():
